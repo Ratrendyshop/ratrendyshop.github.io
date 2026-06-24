@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ratrendyshop — Trending Home Office Gadgets</title>
+<meta name="description" content="Hand-picked, trending home office productivity gadgets that make working from home calmer, cleaner, and more focused. Curated by Ratrendyshop." />
+
+<!--
+  ============================================================
+  RATRENDYSHOP — How to make this site yours (2 quick steps)
+  ============================================================
+  1) AFFILIATE LINKS: Every "Shop on AliExpress" button has
+     href="#" and data-affiliate="PASTE_YOUR_LINK_HERE".
+     Replace the href with your real AliExpress affiliate URL.
+     (Find/replace "PASTE_AFFILIATE_LINK" across this file.)
+  2) PRODUCT PHOTOS: Each card shows a clean SVG placeholder.
+     To use a real photo, replace the <div class="pin-photo">…</div>
+     block with: <img class="pin-photo" src="your-photo.jpg" alt="Product name">
+  Optional: swap the Pinterest/Instagram links in the header & footer
+  for your real @Ratrendyshop profile URLs.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================== TOKENS ============================== */
+:root{
+  --porcelain:#FBF9F4;
+  --white:#FFFFFF;
+  --ink:#221F1D;
+  --ink-soft:#6A615A;
+  --butter:#FCEEBE;
+  --butter-deep:#F4DA8C;
+  --coral:#F4502E;
+  --coral-deep:#D33E1E;
+  --leaf:#4F7A52;
+  --line:#EBE5D9;
+
+  --shadow-sm:0 1px 2px rgba(34,31,29,.05), 0 4px 12px rgba(34,31,29,.05);
+  --shadow-md:0 6px 18px rgba(34,31,29,.08), 0 18px 40px rgba(34,31,29,.07);
+  --shadow-lg:0 14px 32px rgba(34,31,29,.12), 0 30px 70px rgba(34,31,29,.10);
+
+  --radius-s:12px;
+  --radius:18px;
+  --radius-l:26px;
+  --maxw:1180px;
+
+  --font-display:"Bricolage Grotesque", system-ui, sans-serif;
+  --font-body:"Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* ============================== RESET ============================== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--porcelain);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* accessibility */
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;border-radius:0 0 10px 0;z-index:1000}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+
+/* ============================== TYPE ============================== */
+.eyebrow{
+  font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--coral);display:inline-flex;align-items:center;gap:.55em;
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--coral);border-radius:2px}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.04;letter-spacing:-.02em}
+.h-section{font-size:clamp(2rem,4.6vw,3.1rem);letter-spacing:-.03em}
+.lead{font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--ink-soft);max-width:54ch}
+
+/* ============================== BUTTONS ============================== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+  font-weight:700;font-size:.96rem;border-radius:999px;
+  padding:14px 24px;transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  white-space:nowrap;
+}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 20px rgba(244,80,46,.28)}
+.btn-primary:hover{background:var(--coral-deep);transform:translateY(-2px);box-shadow:0 12px 26px rgba(244,80,46,.34)}
+.btn-ink{background:var(--ink);color:var(--porcelain)}
+.btn-ink:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-ghost{background:var(--white);color:var(--ink);border:1.5px solid var(--line);box-shadow:var(--shadow-sm)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-block{width:100%}
+
+/* ============================== HEADER ============================== */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(251,249,244,.82);
+  backdrop-filter:saturate(150%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:1.28rem;letter-spacing:-.02em}
+.brand-mark{
+  width:34px;height:34px;border-radius:10px;background:var(--ink);color:var(--butter);
+  display:grid;place-items:center;font-weight:800;font-size:1rem;transform:rotate(-6deg);
+  box-shadow:var(--shadow-sm);
+}
+.brand span{color:var(--coral)}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-weight:600;font-size:.95rem;color:var(--ink-soft);transition:color .15s}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.social-ico{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:var(--white);border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow-sm);
+  transition:transform .15s, color .15s;
+}
+.social-ico:hover{transform:translateY(-2px);color:var(--coral)}
+.social-ico svg{width:18px;height:18px}
+.nav-toggle{display:none;width:42px;height:42px;border-radius:11px;background:var(--white);border:1px solid var(--line);place-items:center}
+.nav-toggle svg{width:22px;height:22px}
+
+/* ============================== HERO ============================== */
+.hero{padding:64px 0 36px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);margin:18px 0 20px}
+.hero h1 .hl{position:relative;white-space:nowrap}
+.hero h1 .hl::after{
+  content:"";position:absolute;left:-2px;right:-2px;bottom:.06em;height:.34em;
+  background:var(--butter);border-radius:6px;z-index:-1;transform:rotate(-1deg);
+}
+.hero .lead{margin-bottom:30px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-trust{display:flex;align-items:center;gap:18px;margin-top:30px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:var(--ink-soft)}
+.trust-item svg{width:18px;height:18px;color:var(--leaf);flex:none}
+
+/* hero pinboard collage — the signature element */
+.pinboard{position:relative;height:480px}
+.pin-float{
+  position:absolute;width:188px;border-radius:var(--radius);overflow:hidden;
+  background:var(--white);box-shadow:var(--shadow-lg);border:1px solid var(--line);
+  transition:transform .35s cubic-bezier(.2,.7,.3,1);
+}
+.pin-float .ph{height:150px}
+.pin-float .pin-meta{padding:11px 13px}
+.pin-float .pin-meta b{font-family:var(--font-display);font-size:.95rem;display:block;letter-spacing:-.01em}
+.pin-float .pin-meta .pc{color:var(--coral);font-weight:700;font-size:.92rem}
+.pin-1{top:6px;left:2%;transform:rotate(-7deg);z-index:3}
+.pin-2{top:42px;right:0;transform:rotate(6deg);z-index:2;width:198px}
+.pin-3{bottom:8px;left:12%;transform:rotate(4deg);z-index:4;width:200px}
+.pin-4{bottom:48px;right:8%;transform:rotate(-5deg);z-index:1}
+.pinboard:hover .pin-float{transform:rotate(0deg)}
+.tack{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;
+  background:var(--coral);box-shadow:0 2px 5px rgba(0,0,0,.25), inset 0 -2px 3px rgba(0,0,0,.2);z-index:5}
+.float-badge{
+  position:absolute;top:-14px;left:-14px;z-index:9;background:var(--ink);color:var(--butter);
+  font-family:var(--font-display);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:999px;
+  box-shadow:var(--shadow-md);transform:rotate(-8deg);
+}
+
+/* ============================== MARQUEE / strip ============================== */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white);overflow:hidden;margin-top:34px}
+.strip-track{display:flex;gap:48px;padding:16px 0;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content}
+.strip-item{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;font-size:1rem;color:var(--ink)}
+.strip-item .dot{width:7px;height:7px;border-radius:50%;background:var(--coral)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ============================== SECTION SCAFFOLD ============================== */
+.section{padding:80px 0}
+.section-head{max-width:640px;margin-bottom:42px}
+.section-head .lead{margin-top:14px}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.section-head.center .eyebrow{justify-content:center}
+
+/* category filter */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:38px}
+.chip{
+  font-weight:600;font-size:.9rem;padding:9px 18px;border-radius:999px;
+  background:var(--white);border:1.5px solid var(--line);color:var(--ink-soft);
+  transition:all .15s;
+}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip.is-active{background:var(--ink);border-color:var(--ink);color:var(--porcelain)}
+
+/* ============================== TRENDING PINBOARD GRID (masonry) ============================== */
+.masonry{column-count:4;column-gap:24px}
+.pin-card{
+  break-inside:avoid;margin:0 0 24px;
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-l);
+  overflow:hidden;box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease;
+  position:relative;
+}
+.pin-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.pin-card .pin-photo{position:relative;display:block;width:100%}
+.rank{
+  position:absolute;top:12px;left:12px;z-index:3;
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--ink);color:var(--butter);font-family:var(--font-display);font-weight:700;
+  font-size:.78rem;padding:6px 11px;border-radius:999px;box-shadow:var(--shadow-sm);
+}
+.rank svg{width:13px;height:13px}
+.save-pin{
+  position:absolute;top:12px;right:12px;z-index:3;
+  background:var(--coral);color:#fff;font-weight:700;font-size:.78rem;
+  padding:7px 13px;border-radius:999px;box-shadow:var(--shadow-sm);
+  display:inline-flex;align-items:center;gap:5px;opacity:0;transform:translateY(-4px);
+  transition:opacity .2s, transform .2s;
+}
+.save-pin svg{width:13px;height:13px}
+.pin-card:hover .save-pin{opacity:1;transform:translateY(0)}
+.pin-body{padding:18px 18px 20px}
+.pin-cat{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.pin-card h3{font-size:1.12rem;margin:7px 0 6px;letter-spacing:-.01em}
+.pin-desc{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}
+.pin-stats{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:.84rem;font-weight:600}
+.stars{display:inline-flex;align-items:center;gap:4px;color:var(--ink)}
+.stars svg{width:14px;height:14px;color:#F4A72E}
+.sold{color:var(--ink-soft);font-weight:500}
+.pin-foot{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.price{font-family:var(--font-display);font-weight:700;font-size:1.45rem;letter-spacing:-.02em}
+.price small{font-size:.78rem;font-weight:500;color:var(--ink-soft);letter-spacing:0}
+
+/* ============================== PRODUCT SPOTLIGHTS ============================== */
+.spotlights{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.spot{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:34px 0}
+.spot + .spot{border-top:1px solid var(--line)}
+.spot:nth-child(even) .spot-media{order:2}
+.spot-media{
+  border-radius:var(--radius-l);overflow:hidden;position:relative;
+  box-shadow:var(--shadow-md);border:1px solid var(--line);
+}
+.spot-media .ph{height:380px}
+.spot-tag{position:absolute;top:18px;left:18px;background:var(--butter);color:var(--ink);
+  font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;box-shadow:var(--shadow-sm)}
+.spot h3{font-size:clamp(1.7rem,3vw,2.3rem);margin:14px 0 14px}
+.spot-bullets{display:grid;gap:12px;margin:0 0 26px}
+.spot-bullets li{display:flex;gap:12px;align-items:flex-start;font-size:1rem;color:var(--ink)}
+.spot-bullets svg{width:22px;height:22px;color:var(--leaf);flex:none;margin-top:1px}
+.spot-buy{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.spot-price{font-family:var(--font-display);font-weight:700;font-size:1.8rem}
+.spot-price small{font-size:.85rem;color:var(--ink-soft);font-weight:500;display:block;letter-spacing:0}
+
+/* ============================== EMAIL CAPTURE ============================== */
+.guide{padding:84px 0}
+.guide-card{
+  background:var(--butter);border-radius:var(--radius-l);
+  padding:54px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;
+  position:relative;overflow:hidden;border:1px solid var(--butter-deep);
+}
+.guide-card::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;
+  background:rgba(244,80,46,.10)}
+.guide-card .eyebrow{color:var(--coral)}
+.guide-card h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:14px 0 14px}
+.guide-card p{color:#6b5f3a;font-size:1.05rem;max-width:42ch;margin-bottom:22px}
+.guide-points{display:grid;gap:9px;margin-bottom:26px}
+.guide-points li{display:flex;gap:10px;align-items:center;font-weight:600;font-size:.95rem;color:var(--ink)}
+.guide-points svg{width:18px;height:18px;color:var(--coral);flex:none}
+.signup{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:2;max-width:460px}
+.signup input{
+  flex:1;min-width:200px;border:1.5px solid rgba(34,31,29,.16);background:var(--white);
+  border-radius:999px;padding:14px 20px;font-family:inherit;font-size:1rem;color:var(--ink);
+}
+.signup input:focus{outline:none;border-color:var(--ink)}
+.signup-note{font-size:.8rem;color:#8a7c52;margin-top:12px}
+.guide-success{display:none;align-items:center;gap:12px;background:var(--white);border-radius:var(--radius);
+  padding:18px 22px;box-shadow:var(--shadow-sm);font-weight:600;max-width:460px}
+.guide-success svg{width:26px;height:26px;color:var(--leaf);flex:none}
+.guide-success.show{display:flex}
+/* the visual "guide" mockup */
+.guide-visual{position:relative;z-index:2;display:grid;place-items:center}
+.ebook{
+  width:230px;height:300px;border-radius:8px 16px 16px 8px;background:var(--ink);color:var(--porcelain);
+  box-shadow:var(--shadow-lg), -6px 0 0 -1px rgba(0,0,0,.18);padding:30px 26px;
+  display:flex;flex-direction:column;justify-content:space-between;transform:rotate(3deg);
+  border-left:7px solid var(--coral);
+}
+.ebook .ek-top{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--butter)}
+.ebook .ek-title{font-family:var(--font-display);font-weight:700;font-size:1.5rem;line-height:1.08;margin-top:auto}
+.ebook .ek-by{font-size:.78rem;color:#b9b1a8;margin-top:14px}
+.ebook .ek-free{align-self:flex-start;margin-top:16px;background:var(--coral);color:#fff;font-weight:700;
+  font-size:.74rem;padding:5px 12px;border-radius:999px;letter-spacing:.05em}
+
+/* ============================== SOCIAL ============================== */
+.social-sec{padding:0 0 84px}
+.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.social-card{
+  border-radius:var(--radius-l);padding:36px;color:#fff;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:space-between;min-height:230px;box-shadow:var(--shadow-md);
+}
+.social-card.pin{background:linear-gradient(135deg,#E8513B,#C0341F)}
+.social-card.insta{background:linear-gradient(135deg,#7A3DBE,#D6326B 55%,#F19A3E)}
+.social-card .s-ico{width:50px;height:50px;border-radius:14px;background:rgba(255,255,255,.18);display:grid;place-items:center}
+.social-card .s-ico svg{width:26px;height:26px;color:#fff}
+.social-card h3{font-size:1.5rem;color:#fff}
+.social-card p{opacity:.92;margin:6px 0 0;font-size:.96rem}
+.social-card .handle{font-weight:700;margin-top:2px}
+.social-card .s-cta{align-self:flex-start;margin-top:20px;background:#fff;color:var(--ink);font-weight:700;
+  padding:11px 20px;border-radius:999px;font-size:.92rem;display:inline-flex;gap:8px;align-items:center;
+  transition:transform .15s}
+.social-card .s-cta:hover{transform:translateY(-2px)}
+
+/* ============================== DISCLOSURE ============================== */
+.disclosure{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 22px;display:flex;gap:14px;align-items:flex-start;font-size:.86rem;color:var(--ink-soft);
+  max-width:760px;margin:0 auto}
+.disclosure svg{width:20px;height:20px;flex:none;color:var(--ink-soft);margin-top:2px}
+.disclosure b{color:var(--ink)}
+
+/* ============================== FOOTER ============================== */
+.site-footer{background:var(--ink);color:#cfc8bf;padding:64px 0 32px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.site-footer .brand{color:#fff;margin-bottom:14px}
+.site-footer .brand .brand-mark{background:var(--butter);color:var(--ink)}
+.foot-about{font-size:.92rem;max-width:34ch;color:#b6aea4}
+.foot-social{display:flex;gap:10px;margin-top:18px}
+.foot-social a{width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:#fff;transition:background .15s}
+.foot-social a:hover{background:var(--coral)}
+.foot-social svg{width:17px;height:17px}
+.foot-col h4{color:#fff;font-family:var(--font-display);font-size:1rem;margin-bottom:16px;font-weight:600}
+.foot-col a{display:block;font-size:.92rem;padding:5px 0;color:#cfc8bf;transition:color .15s}
+.foot-col a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.84rem;color:#928a80}
+.foot-bottom a{color:#cfc8bf}
+
+/* ============================== REVEAL ============================== */
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ============================== RESPONSIVE ============================== */
+@media(max-width:1024px){
+  .masonry{column-count:3}
+  .hero-grid{gap:36px}
+}
+@media(max-width:860px){
+  .nav-links{display:none}
+  .nav-right .social-ico{display:none}
+  .nav-right .btn-ink{display:none}
+  .nav-toggle{display:grid}
+  .nav.open .nav-links{
+    display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;
+    align-items:flex-start;gap:0;background:var(--porcelain);border-bottom:1px solid var(--line);
+    padding:8px 24px 18px;
+  }
+  .nav.open .nav-links a{padding:12px 0;width:100%;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .hero-grid{grid-template-columns:1fr}
+  .pinboard{height:430px;margin-top:10px;max-width:440px}
+  .masonry{column-count:2}
+  .spot{grid-template-columns:1fr;gap:28px}
+  .spot:nth-child(even) .spot-media{order:0}
+  .spot-media .ph{height:300px}
+  .guide-card{grid-template-columns:1fr;padding:38px 28px}
+  .guide-visual{order:-1}
+  .social-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:520px){
+  .wrap{padding:0 18px}
+  .section{padding:60px 0}
+  .masonry{column-count:1;max-width:380px;margin:0 auto}
+  .pinboard{height:400px;max-width:340px;margin:0 auto}
+  .pin-float{width:150px!important}
+  .pin-2,.pin-3{width:160px!important}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .guide-card{padding:30px 20px}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .js .reveal{opacity:1;transform:none}
+  .pinboard:hover .pin-float{transform:none}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#trending">Skip to gadgets</a>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Ratrendyshop home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        Ratrendy<span>shop</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#picks">Editor's Picks</a></li>
+        <li><a href="#guide">Free Guide</a></li>
+        <li><a href="#follow">Follow</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- Replace href with your real Pinterest URL -->
+        <a class="social-ico" href="https://pinterest.com/Ratrendyshop" target="_blank" rel="noopener" aria-label="Ratrendyshop on Pinterest">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 3.6 5.86 3.6 9.43c0 1.66.88 3.73 2.3 4.38.21.1.33.06.38-.15.04-.16.24-.97.33-1.34a.36.36 0 0 0-.08-.34c-.5-.6-.9-1.7-.9-2.73 0-2.64 1.97-5.2 5.33-5.2 2.9 0 4.93 1.99 4.93 4.83 0 3.2-1.62 5.42-3.72 5.42-1.16 0-2.03-.96-1.75-2.14.33-1.41.98-2.93.98-3.95 0-.91-.49-1.67-1.5-1.67-1.19 0-2.15 1.24-2.15 2.9 0 1.06.36 1.77.36 1.77l-1.43 6.08c-.43 1.8-.06 4 .03 4.22.05.13.21.16.3.06.12-.16 1.7-2.1 2.24-4.04.15-.55.86-3.37.86-3.37.42.81 1.66 1.52 2.98 1.52 3.92 0 6.58-3.57 6.58-8.36C20.4 5.5 17.27 2 12.04 2Z"/></svg>
+        </a>
+        <!-- Replace href with your real Instagram URL -->
+        <a class="social-ico" href="https://instagram.com/Ratrendyshop" target="_blank" rel="noopener" aria-label="Ratrendyshop on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="btn btn-ink" href="#trending">Shop Gadgets</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Curated for the home office</span>
+        <h1>Tiny gadgets,<br><span class="hl">huge focus</span> upgrades.</h1>
+        <p class="lead">Ratrendyshop hand-picks the trending desk gadgets that actually make working from home calmer, cleaner, and more productive — then links you straight to the best AliExpress deals.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#trending">
+            Browse trending gadgets
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#guide">Get the free guide</a>
+        </div>
+        <div class="hero-trust">
+          <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Tested &amp; ranked</span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Under $60 picks</span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Updated weekly</span>
+        </div>
+      </div>
+
+      <!-- SIGNATURE: tilted Pinterest-style pinboard -->
+      <div class="pinboard" aria-hidden="true">
+        <span class="float-badge">This week's board ✦</span>
+
+        <article class="pin-float pin-1">
+          <span class="tack"></span>
+          <div class="ph" data-art="lamp"></div>
+          <div class="pin-meta"><b>LumaBar Light</b><span class="pc">$32.50</span></div>
+        </article>
+
+        <article class="pin-float pin-2">
+          <span class="tack"></span>
+          <div class="ph" data-art="keyboard"></div>
+          <div class="pin-meta"><b>ClickType 75%</b><span class="pc">$46.00</span></div>
+        </article>
+
+        <article class="pin-float pin-3">
+          <span class="tack"></span>
+          <div class="ph" data-art="stand"></div>
+          <div class="pin-meta"><b>AeroRise Stand</b><span class="pc">$24.90</span></div>
+        </article>
+
+        <article class="pin-float pin-4">
+          <span class="tack"></span>
+          <div class="ph" data-art="mouse"></div>
+          <div class="pin-meta"><b>GlideCurve Mouse</b><span class="pc">$18.90</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- scrolling value strip -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span class="strip-item"><span class="dot"></span>Declutter your desk</span>
+      <span class="strip-item"><span class="dot"></span>Ease wrist &amp; neck strain</span>
+      <span class="strip-item"><span class="dot"></span>Better Zoom lighting</span>
+      <span class="strip-item"><span class="dot"></span>Cable-free calm</span>
+      <span class="strip-item"><span class="dot"></span>Deep-focus sound</span>
+      <span class="strip-item"><span class="dot"></span>Charge everything at once</span>
+      <span class="strip-item"><span class="dot"></span>Declutter your desk</span>
+      <span class="strip-item"><span class="dot"></span>Ease wrist &amp; neck strain</span>
+      <span class="strip-item"><span class="dot"></span>Better Zoom lighting</span>
+      <span class="strip-item"><span class="dot"></span>Cable-free calm</span>
+      <span class="strip-item"><span class="dot"></span>Deep-focus sound</span>
+      <span class="strip-item"><span class="dot"></span>Charge everything at once</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TRENDING GRID ============================== -->
+<section class="section" id="trending">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Trending now</span>
+      <h2 class="h-section">This week's most-saved gadgets</h2>
+      <p class="lead">Ranked by what our community is buying and pinning right now. Tap any card to grab it on AliExpress.</p>
+    </div>
+
+    <div class="filters reveal" id="filters" role="tablist" aria-label="Filter gadgets by category">
+      <button class="chip is-active" data-filter="all">All gadgets</button>
+      <button class="chip" data-filter="ergonomics">Ergonomics</button>
+      <button class="chip" data-filter="lighting">Lighting</button>
+      <button class="chip" data-filter="desk">Desk Setup</button>
+      <button class="chip" data-filter="focus">Audio &amp; Focus</button>
+      <button class="chip" data-filter="charging">Charging</button>
+    </div>
+
+    <div class="masonry" id="masonry">
+
+      <!-- 1 -->
+      <article class="pin-card reveal" data-cat="desk">
+        <div class="pin-photo">
+          <span class="rank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>#1 Trending</span>
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph" data-art="stand"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Desk Setup</span>
+          <h3>AeroRise Aluminum Laptop Stand</h3>
+          <p class="pin-desc">Lifts your screen to eye level so your neck finally gets a break.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.8</span>
+            <span class="sold">12,400+ sold</span>
+          </div>
+          <div class="pin-foot">
+            <span class="price">$24.90 <small>approx.</small></span>
+          </div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="pin-card reveal" data-cat="lighting">
+        <div class="pin-photo">
+          <span class="rank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>#2 Trending</span>
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph tall" data-art="lamp"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Lighting</span>
+          <h3>LumaBar Monitor Light</h3>
+          <p class="pin-desc">Glare-free light that clips to your screen and auto-dims to the room.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.9</span>
+            <span class="sold">8,400+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$32.50 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="pin-card reveal" data-cat="desk">
+        <div class="pin-photo">
+          <span class="rank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>#3 Trending</span>
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph" data-art="keyboard"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Desk Setup</span>
+          <h3>ClickType 75% Wireless Keyboard</h3>
+          <p class="pin-desc">Hot-swappable, hushed switches and a footprint that frees up desk space.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.7</span>
+            <span class="sold">5,100+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$46.00 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="pin-card reveal" data-cat="ergonomics">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph" data-art="mouse"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Ergonomics</span>
+          <h3>GlideCurve Vertical Mouse</h3>
+          <p class="pin-desc">A natural handshake grip that quietly eases wrist strain all day.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.8</span>
+            <span class="sold">9,600+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$18.90 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="pin-card reveal" data-cat="desk">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph short" data-art="cable"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Desk Setup</span>
+          <h3>TidyTray Cable Manager</h3>
+          <p class="pin-desc">Mounts under the desk and hides the cable spaghetti for good.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.6</span>
+            <span class="sold">15,200+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$13.20 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="pin-card reveal" data-cat="charging">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph tall" data-art="charger"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Charging</span>
+          <h3>ChargeHalo 3-in-1 Station</h3>
+          <p class="pin-desc">Powers your phone, watch and earbuds from one tidy pad.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.8</span>
+            <span class="sold">7,700+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$29.90 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="pin-card reveal" data-cat="focus">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph" data-art="noise"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Audio &amp; Focus</span>
+          <h3>FocusPod White Noise Machine</h3>
+          <p class="pin-desc">20 calming soundscapes that wall off distractions for deep work.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.7</span>
+            <span class="sold">4,900+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$19.50 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="pin-card reveal" data-cat="desk">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph short" data-art="mat"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Desk Setup</span>
+          <h3>DeskScape XL Felt Mat</h3>
+          <p class="pin-desc">A soft, quiet surface that instantly frames your whole setup.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.9</span>
+            <span class="sold">7,200+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$21.00 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="pin-card reveal" data-cat="charging">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph" data-art="hub"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Charging</span>
+          <h3>PowerDock 9-in-1 USB-C Hub</h3>
+          <p class="pin-desc">One cable to charge, display and connect everything on your desk.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.8</span>
+            <span class="sold">6,800+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$34.90 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="pin-card reveal" data-cat="focus">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph short" data-art="mug"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Audio &amp; Focus</span>
+          <h3>WarmSip Smart Mug Warmer</h3>
+          <p class="pin-desc">Keeps coffee at a perfect 55°C from your first sip to your last.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.8</span>
+            <span class="sold">11,000+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$22.40 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="pin-card reveal" data-cat="ergonomics">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph" data-art="footrest"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Ergonomics</span>
+          <h3>FloatRest Footrest Hammock</h3>
+          <p class="pin-desc">Slings under the desk so you can put your feet up — literally.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.6</span>
+            <span class="sold">8,100+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$11.90 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="pin-card reveal" data-cat="ergonomics">
+        <div class="pin-photo">
+          <span class="save-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.3-8.6C1 9.5 2.4 6 5.8 6c2 0 3.3 1.2 4.2 2.3C10.9 7.2 12.2 6 14.2 6c3.4 0 4.8 3.5 3.1 6.4C19 16.5 12 21 12 21z"/></svg>Save</span>
+          <div class="ph tall" data-art="riser"></div>
+        </div>
+        <div class="pin-body">
+          <span class="pin-cat">Ergonomics</span>
+          <h3>PostureLift Desk Converter</h3>
+          <p class="pin-desc">Pull to switch from sitting to standing in one smooth motion.</p>
+          <div class="pin-stats">
+            <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20.3l2.3-7-6-4.4h7.6z"/></svg>4.7</span>
+            <span class="sold">3,300+ sold</span>
+          </div>
+          <div class="pin-foot"><span class="price">$58.00 <small>approx.</small></span></div>
+          <a class="btn btn-primary btn-block" style="margin-top:14px" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== EDITOR'S PICKS / SPOTLIGHTS ============================== -->
+<section class="spotlights" id="picks">
+  <div class="wrap">
+    <div class="section-head center reveal" style="padding-top:80px">
+      <span class="eyebrow">Editor's picks</span>
+      <h2 class="h-section">Three upgrades worth the desk space</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">The gadgets we'd buy first if we were rebuilding a home office from scratch.</p>
+    </div>
+
+    <!-- Pick 1 -->
+    <article class="spot reveal">
+      <div class="spot-media">
+        <span class="spot-tag">Best for eye comfort</span>
+        <div class="ph" data-art="lamp"></div>
+      </div>
+      <div class="spot-copy">
+        <span class="eyebrow">Lighting · LumaBar</span>
+        <h3>End the afternoon screen squint</h3>
+        <ul class="spot-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Asymmetric light hits your desk, never your screen — zero glare.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Auto-dimming sensor matches the brightness of your room.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Clamps to the monitor — reclaims the space a desk lamp steals.</li>
+        </ul>
+        <div class="spot-buy">
+          <span class="spot-price">$32.50 <small>approx. price</small></span>
+          <a class="btn btn-primary" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Pick 2 -->
+    <article class="spot reveal">
+      <div class="spot-media">
+        <span class="spot-tag">Most loved</span>
+        <div class="ph" data-art="keyboard"></div>
+      </div>
+      <div class="spot-copy">
+        <span class="eyebrow">Desk Setup · ClickType 75%</span>
+        <h3>Type quieter, work happier</h3>
+        <ul class="spot-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Hushed linear switches — call-friendly, no office-keyboard clatter.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Hot-swappable, so you can change feel without soldering.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Connects over Bluetooth, 2.4G or USB-C across three devices.</li>
+        </ul>
+        <div class="spot-buy">
+          <span class="spot-price">$46.00 <small>approx. price</small></span>
+          <a class="btn btn-primary" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Pick 3 -->
+    <article class="spot reveal" style="padding-bottom:84px">
+      <div class="spot-media">
+        <span class="spot-tag">Posture saver</span>
+        <div class="ph" data-art="riser"></div>
+      </div>
+      <div class="spot-copy">
+        <span class="eyebrow">Ergonomics · PostureLift</span>
+        <h3>Stand up without buying a new desk</h3>
+        <ul class="spot-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Sits on your current desk — sit-to-stand in one smooth pull.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Holds a monitor plus laptop on a roomy two-tier surface.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Gas-spring lift glides up and down with one hand.</li>
+        </ul>
+        <div class="spot-buy">
+          <span class="spot-price">$58.00 <small>approx. price</small></span>
+          <a class="btn btn-primary" href="#" data-affiliate="PASTE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================== EMAIL CAPTURE ============================== -->
+<section class="guide" id="guide">
+  <div class="wrap">
+    <div class="guide-card reveal">
+      <div class="guide-copy">
+        <span class="eyebrow">Free download</span>
+        <h2>The Home Office Gadget Guide</h2>
+        <p>A free PDF of 32 vetted gadgets under $50 that actually boost focus — with the exact picks, prices, and what to skip.</p>
+        <ul class="guide-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> 32 tested gadgets, sorted by what they fix</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> A no-clutter starter setup under $120</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> New trending picks emailed every week</li>
+        </ul>
+
+        <!-- On submit this shows a success state. To collect real emails, point this
+             at your email tool (Mailchimp / ConvertKit / Beehiiv) form action. -->
+        <div class="signup" id="signup">
+          <input type="email" id="email" placeholder="you@email.com" aria-label="Your email address" autocomplete="email" />
+          <button class="btn btn-primary" id="signupBtn" type="button">Send me the guide</button>
+        </div>
+        <p class="signup-note">No spam, just gadgets. Unsubscribe anytime.</p>
+
+        <div class="guide-success" id="signupSuccess" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>You're in! Check your inbox — your guide is on the way.</span>
+        </div>
+      </div>
+
+      <div class="guide-visual" aria-hidden="true">
+        <div class="ebook">
+          <span class="ek-top">Ratrendyshop</span>
+          <span class="ek-title">The Home Office Gadget Guide</span>
+          <span class="ek-by">32 focus-boosting picks under $50</span>
+          <span class="ek-free">Free PDF</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOLLOW / SOCIAL ============================== -->
+<section class="social-sec" id="follow">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Come hang out</span>
+      <h2 class="h-section">Daily desk inspo on Pinterest &amp; Instagram</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">New gadget finds, setup ideas, and deal alerts — follow @Ratrendyshop and never miss a drop.</p>
+    </div>
+
+    <div class="social-grid reveal">
+      <!-- Replace href with your real Pinterest profile -->
+      <a class="social-card pin" href="https://pinterest.com/Ratrendyshop" target="_blank" rel="noopener">
+        <div class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 3.6 5.86 3.6 9.43c0 1.66.88 3.73 2.3 4.38.21.1.33.06.38-.15.04-.16.24-.97.33-1.34a.36.36 0 0 0-.08-.34c-.5-.6-.9-1.7-.9-2.73 0-2.64 1.97-5.2 5.33-5.2 2.9 0 4.93 1.99 4.93 4.83 0 3.2-1.62 5.42-3.72 5.42-1.16 0-2.03-.96-1.75-2.14.33-1.41.98-2.93.98-3.95 0-.91-.49-1.67-1.5-1.67-1.19 0-2.15 1.24-2.15 2.9 0 1.06.36 1.77.36 1.77l-1.43 6.08c-.43 1.8-.06 4 .03 4.22.05.13.21.16.3.06.12-.16 1.7-2.1 2.24-4.04.15-.55.86-3.37.86-3.37.42.81 1.66 1.52 2.98 1.52 3.92 0 6.58-3.57 6.58-8.36C20.4 5.5 17.27 2 12.04 2Z"/></svg></div>
+        <div>
+          <h3>Pinterest</h3>
+          <p>Curated boards of desk setups &amp; gadget finds.</p>
+          <p class="handle">@Ratrendyshop</p>
+        </div>
+        <span class="s-cta">Follow on Pinterest <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+
+      <!-- Replace href with your real Instagram profile -->
+      <a class="social-card insta" href="https://instagram.com/Ratrendyshop" target="_blank" rel="noopener">
+        <div class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <div>
+          <h3>Instagram</h3>
+          <p>Reels, quick demos &amp; behind-the-scenes finds.</p>
+          <p class="handle">@Ratrendyshop</p>
+        </div>
+        <span class="s-cta">Follow on Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+
+    <div class="disclosure reveal" style="margin-top:40px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <p><b>Affiliate disclosure.</b> Ratrendyshop is a participant in the AliExpress affiliate program. When you buy through links on this site we may earn a small commission — at no extra cost to you. Prices shown are approximate and set by the seller; always confirm the current price on AliExpress.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          Ratrendy<span style="color:var(--coral)">shop</span>
+        </a>
+        <p class="foot-about">Hand-picked home office productivity gadgets that make working from home calmer, cleaner, and more focused.</p>
+        <div class="foot-social">
+          <a href="https://pinterest.com/Ratrendyshop" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 3.6 5.86 3.6 9.43c0 1.66.88 3.73 2.3 4.38.21.1.33.06.38-.15.04-.16.24-.97.33-1.34a.36.36 0 0 0-.08-.34c-.5-.6-.9-1.7-.9-2.73 0-2.64 1.97-5.2 5.33-5.2 2.9 0 4.93 1.99 4.93 4.83 0 3.2-1.62 5.42-3.72 5.42-1.16 0-2.03-.96-1.75-2.14.33-1.41.98-2.93.98-3.95 0-.91-.49-1.67-1.5-1.67-1.19 0-2.15 1.24-2.15 2.9 0 1.06.36 1.77.36 1.77l-1.43 6.08c-.43 1.8-.06 4 .03 4.22.05.13.21.16.3.06.12-.16 1.7-2.1 2.24-4.04.15-.55.86-3.37.86-3.37.42.81 1.66 1.52 2.98 1.52 3.92 0 6.58-3.57 6.58-8.36C20.4 5.5 17.27 2 12.04 2Z"/></svg></a>
+          <a href="https://instagram.com/Ratrendyshop" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <a href="#trending">Trending now</a>
+        <a href="#picks">Editor's picks</a>
+        <a href="#trending">Ergonomics</a>
+        <a href="#trending">Lighting</a>
+        <a href="#trending">Charging</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Ratrendyshop</h4>
+        <a href="#guide">Free gadget guide</a>
+        <a href="#follow">Pinterest</a>
+        <a href="#follow">Instagram</a>
+        <a href="#top">Back to top</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Good to know</h4>
+        <a href="#follow">Affiliate disclosure</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Ratrendyshop. All rights reserved.</span>
+      <span>As an AliExpress affiliate, we earn from qualifying purchases.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== SVG ART LIBRARY (placeholders) ============================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- gradients per tint, referenced by the JS that paints .ph blocks -->
+  </defs>
+</svg>
+
+<script>
+/* mark that JS is on (enables reveal animation, progressive enhancement) */
+document.documentElement.classList.add('js');
+
+/* ---------- current year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- mobile nav ---------- */
+(function(){
+  var nav=document.getElementById('nav'), btn=document.getElementById('navToggle');
+  if(btn){
+    btn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.querySelectorAll('.nav-links a').forEach(function(a){
+      a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');});
+    });
+  }
+})();
+
+/* ---------- category filter ---------- */
+(function(){
+  var chips=document.querySelectorAll('.chip');
+  var cards=document.querySelectorAll('#masonry .pin-card');
+  chips.forEach(function(chip){
+    chip.addEventListener('click',function(){
+      chips.forEach(function(c){c.classList.remove('is-active');});
+      chip.classList.add('is-active');
+      var f=chip.getAttribute('data-filter');
+      cards.forEach(function(card){
+        var show = (f==='all') || card.getAttribute('data-cat')===f;
+        card.style.display = show ? '' : 'none';
+      });
+    });
+  });
+})();
+
+/* ---------- email capture (demo success state) ---------- */
+(function(){
+  var btn=document.getElementById('signupBtn');
+  var email=document.getElementById('email');
+  var signup=document.getElementById('signup');
+  var note=document.querySelector('.signup-note');
+  var success=document.getElementById('signupSuccess');
+  if(!btn) return;
+  function valid(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+  function submit(){
+    if(!valid(email.value)){
+      email.focus();
+      email.style.borderColor='var(--coral)';
+      return;
+    }
+    /* TODO: send email.value to your list provider here */
+    signup.style.display='none';
+    if(note) note.style.display='none';
+    success.classList.add('show');
+  }
+  btn.addEventListener('click',submit);
+  email.addEventListener('keydown',function(e){if(e.key==='Enter')submit();});
+  email.addEventListener('input',function(){email.style.borderColor='';});
+})();
+
+/* ---------- scroll reveal ---------- */
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in');});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+
+/* ---------- paint product placeholder art (.ph blocks) ---------- */
+/* Each gadget gets a consistent illustrated scene so the site looks complete
+   out of the box. Replace any .ph block with a real <img> for live photos. */
+(function(){
+  var TINT={
+    stand:['#FCEEBE','#F4DA8C'], lamp:['#FBE3D6','#F6C2A6'], keyboard:['#E5EEE4','#C7DDC5'],
+    mouse:['#E6E9F5','#C8CFEB'], cable:['#FCEEBE','#EFD98A'], charger:['#FBE3D6','#F4C4A8'],
+    noise:['#E9E4F2','#CFC2E6'], mat:['#E5EEE4','#CBDDC8'], hub:['#E6E9F5','#CAD1EC'],
+    mug:['#FBE3D6','#F3C0A4'], footrest:['#FCEEBE','#EFD98A'], riser:['#E9E4F2','#D0C3E6']
+  };
+  var ART={
+    stand:'<rect x="40" y="120" width="120" height="14" rx="6" fill="#221F1D"/><path d="M62 120 L80 70 H120 L138 120 Z" fill="#fff" stroke="#221F1D" stroke-width="4"/><rect x="78" y="60" width="44" height="30" rx="4" fill="#221F1D"/>',
+    lamp:'<rect x="48" y="120" width="104" height="10" rx="5" fill="#221F1D"/><rect x="96" y="60" width="8" height="60" fill="#221F1D"/><rect x="55" y="50" width="90" height="12" rx="6" fill="#221F1D"/><path d="M60 62 H140 L150 78 H50 Z" fill="#FCEEBE" stroke="#221F1D" stroke-width="3"/>',
+    keyboard:'<rect x="40" y="74" width="120" height="52" rx="10" fill="#fff" stroke="#221F1D" stroke-width="4"/><g fill="#221F1D"><rect x="50" y="84" width="12" height="12" rx="3"/><rect x="66" y="84" width="12" height="12" rx="3"/><rect x="82" y="84" width="12" height="12" rx="3"/><rect x="98" y="84" width="12" height="12" rx="3"/><rect x="114" y="84" width="12" height="12" rx="3"/><rect x="130" y="84" width="12" height="12" rx="3"/><rect x="66" y="104" width="68" height="12" rx="3"/></g>',
+    mouse:'<path d="M100 56 C124 56 134 78 134 100 C134 124 120 140 100 140 C80 140 66 124 66 100 C66 78 76 56 100 56 Z" fill="#fff" stroke="#221F1D" stroke-width="4"/><rect x="96" y="66" width="8" height="26" rx="4" fill="#F4502E"/>',
+    cable:'<rect x="44" y="86" width="112" height="30" rx="8" fill="#fff" stroke="#221F1D" stroke-width="4"/><path d="M60 86 C60 64 84 64 84 86 M100 86 C100 60 124 60 124 86" fill="none" stroke="#221F1D" stroke-width="4"/>',
+    charger:'<ellipse cx="100" cy="116" rx="56" ry="14" fill="#221F1D"/><ellipse cx="100" cy="108" rx="56" ry="14" fill="#fff" stroke="#221F1D" stroke-width="4"/><rect x="92" y="58" width="16" height="44" rx="4" fill="#221F1D"/><circle cx="100" cy="108" r="10" fill="#F4502E"/>',
+    noise:'<circle cx="100" cy="98" r="40" fill="#fff" stroke="#221F1D" stroke-width="4"/><circle cx="100" cy="98" r="14" fill="#221F1D"/><path d="M150 78 C160 90 160 106 150 118 M58 78 C48 90 48 106 58 118" fill="none" stroke="#221F1D" stroke-width="4" stroke-linecap="round"/>',
+    mat:'<rect x="40" y="72" width="120" height="56" rx="10" fill="#fff" stroke="#221F1D" stroke-width="4"/><rect x="56" y="86" width="50" height="30" rx="4" fill="#221F1D"/><circle cx="130" cy="100" r="10" fill="#F4502E"/>',
+    hub:'<rect x="56" y="84" width="88" height="32" rx="8" fill="#221F1D"/><g fill="#FCEEBE"><rect x="64" y="96" width="14" height="8" rx="2"/><rect x="84" y="96" width="14" height="8" rx="2"/><rect x="104" y="96" width="14" height="8" rx="2"/><rect x="124" y="96" width="12" height="8" rx="2"/></g><rect x="40" y="96" width="18" height="8" rx="3" fill="#221F1D"/>',
+    mug:'<path d="M64 76 H128 V112 A18 18 0 0 1 110 130 H82 A18 18 0 0 1 64 112 Z" fill="#fff" stroke="#221F1D" stroke-width="4"/><path d="M128 86 H140 A12 12 0 0 1 140 110 H128" fill="none" stroke="#221F1D" stroke-width="4"/><path d="M80 62 C80 56 84 56 84 50 M96 62 C96 56 100 56 100 50" stroke="#F4502E" stroke-width="4" fill="none" stroke-linecap="round"/>',
+    footrest:'<rect x="48" y="118" width="104" height="10" rx="5" fill="#221F1D"/><path d="M52 92 Q100 132 148 92" fill="none" stroke="#221F1D" stroke-width="5" stroke-linecap="round"/><rect x="46" y="84" width="10" height="14" rx="3" fill="#221F1D"/><rect x="144" y="84" width="10" height="14" rx="3" fill="#221F1D"/>',
+    riser:'<rect x="44" y="116" width="112" height="12" rx="4" fill="#221F1D"/><rect x="52" y="92" width="96" height="12" rx="3" fill="#fff" stroke="#221F1D" stroke-width="4"/><rect x="78" y="58" width="44" height="30" rx="4" fill="#221F1D"/><path d="M70 104 L70 116 M130 104 L130 116" stroke="#221F1D" stroke-width="5"/>'
+  };
+  document.querySelectorAll('.ph').forEach(function(ph){
+    var key=ph.getAttribute('data-art')||'stand';
+    var t=TINT[key]||TINT.stand;
+    ph.style.background='linear-gradient(140deg,'+t[0]+','+t[1]+')';
+    ph.innerHTML='<svg viewBox="0 0 200 170" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true">'+(ART[key]||ART.stand)+'</svg>';
+  });
+})();
+</script>
+</body>
+</html>
