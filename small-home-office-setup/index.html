@@ -6,21 +6,31 @@
 
 <!--
   ================================================================
-  RATRENDYSHOP GUIDE  —  /small-home-office-setup/index.html
-  Live: https://ratrendyshop.github.io/small-home-office-setup/
+  RATRENDYSHOP GUIDE  —  small-home-office-setup
+  File location in repo:  /small-home-office-setup/index.html
+  Live URL:https://ratrendyshop.github.io/small-home-office-setup/
   ================================================================
-  ⚠ CHECK THESE IMAGE PATHS BEFORE UPLOADING.
-  The filenames below were inferred, not read from your repo.
-  If any is wrong, find & replace it in this file:
-
-    /images/chargingtypec1.jpg
-    /images/footrest1.jpg
-    /images/laptopstand2.jpg
-    /images/leatherdeskmat2.jpg
-    /images/penorganizer1.jpg
+  TO CLONE THIS PAGE FOR A NEW GUIDE - change only these 6 things:
+    1. <title>, <meta name="description">, and the og:/twitter: pair below
+    2. <link rel="canonical">  → the new folder name
+    3. The JSON-LD headline + description at the bottom of <head>
+    4. Hero: eyebrow, <h1>, and intro paragraph
+    5. The seven <article class="step"> blocks (name, copy, href, pin description)
+    6. The "More guides" links in the footer
+  DO NOT change the <style> block - it keeps every guide visually identical.
   ================================================================
-  The <style> block is identical across all guides. Do not edit it.
-  The only design variation is the hero line inside <div class="tangle">.
+  PINTEREST VERIFICATION
+  Paste the meta tag Pinterest gives you into index.html at the site ROOT.
+  Claiming ratrendyshop.github.io covers every folder under it, including
+  this one. You do NOT need to claim each guide separately.
+  ================================================================
+  PRODUCT PHOTOS
+  Each .pin block holds an SVG placeholder. Replace the whole
+  <svg class="pin-art">…</svg> with:
+    <img class="pin-art" src="/images/cable-clipsblack.jpg"
+         alt="Magnetic cable clips holding three cables at a desk edge"
+         data-pin-description="Magnetic cable clips that keep charging cables from sliding behind the desk.">
+  Pin images must be 2:3 (1000×1500). The .pin box is already 2:3.
   ================================================================
 -->
 
@@ -42,22 +52,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
-<style> block — it keeps every guide visually identical.
-  ================================================================
-  PINTEREST VERIFICATION
-  Paste the meta tag Pinterest gives you into index.html at the site ROOT.
-  Claiming ratrendyshop.github.io covers every folder under it, including
-  this one. You do NOT need to claim each guide separately.
-  ================================================================
-  PRODUCT PHOTOS
-  Each .pin block holds an SVG placeholder. Replace the whole
-  <svg class="pin-art">…</svg> with:
-    <img class="pin-art" src="/images/cable-clipsblack.jpg"
-         alt="Magnetic cable clips holding three cables at a desk edge"
-         data-pin-description="Magnetic cable clips that keep charging cables from sliding behind the desk.">
-  Pin images must be 2:3 (1000×1500). The .pin box is already 2:3.
-  ================================================================
--->
 
 <title>Desk Cable Management Ideas: 7 Fixes for a Tangle-Free Setup | Ratrendyshop</title>
 <meta name="description" content="Five practical desk cable management ideas — magnetic clips, a single hub, a charging stand, a mat and a laptop riser — to get charging cables off the floor and out of sight." />
@@ -318,17 +312,18 @@ a{color:inherit}
 <body>
 <a class="skip" href="#guide-start">Skip to the guide</a>
 
+<!-- ============================== HEADER ============================== -->
 <header class="site-header">
   <div class="wrap">
     <nav class="nav" id="nav" aria-label="Primary">
       <a class="brand" href="/" aria-label="Ratrendyshop home">
-        <img class="site-logo" src="/images/LogoT.png" alt="Ratrendyshop logo">
+        <img class="site-logo" src="/images/LogoT.png" alt="Ratrendyshop logo" >
         Ratrendy<span>Shop</span>
       </a>
       <ul class="nav-links">
         <li><a href="/#trending">Trending</a></li>
-        <li><a href="/#guides">Guides</a></li>
         <li><a href="/#picks">Editor's Picks</a></li>
+        <li><a href="/#guide">Free Guide</a></li>
         <li><a href="/#follow">Follow</a></li>
       </ul>
       <a class="nav-cta" href="/#trending">Shop Gadgets</a>
@@ -343,6 +338,7 @@ a{color:inherit}
   </nav>
 </div>
 
+<!-- ============================== HERO ============================== -->
 <section class="hero">
   <div class="wrap read">
     <span class="eyebrow">Desk setup guide</span>
@@ -355,15 +351,20 @@ a{color:inherit}
     </div>
   </div>
 
+    <!-- SIGNATURE: a cable that starts knotted and ends straight -->
   <div class="wrap read tangle" aria-hidden="true">
-    <svg viewBox="0 0 720 120" role="presentation"><path class="ghost" d="M6 100 L 714 100"/><path d="M6 100 L 6 30 L 250 30"/><path d="M250 30 L 250 100" style="animation-delay:.7s"/><path d="M60 100 L 60 62 L 210 62 L 210 100" style="animation-delay:1s"/></svg>
+    <svg viewBox="0 0 720 120" role="presentation">
+      <path class="ghost" d="M6 84 C 60 84, 62 22, 108 22 S 156 96, 198 78 S 236 18, 282 34 S 318 96, 366 82 C 420 66, 470 60, 714 60"/>
+      <path d="M6 60 C 54 60, 58 16, 104 16 S 150 104, 194 84 S 232 22, 278 40 S 316 92, 364 78 C 418 62, 468 60, 714 60"/>
+    </svg>
   </div>
 
   <div class="wrap read">
-    <p class="disclosure"><strong>Heads up:</strong> the product links on this page are affiliate links. If you buy through one, Ratrendyshop earns a small commission &mdash; at no extra cost to you. We only list things we would put on our own desk.</p>
+    <p class="disclosure"><strong>Heads up:</strong> the product links on this page are affiliate links. If you buy through one, Ratrendyshop earns a small commission - at no extra cost to you. We only list things we would put on our own desk.</p>
   </div>
 </section>
 
+<!-- ============================== INTRO ============================== -->
 <section class="intro" id="guide-start">
   <div class="wrap read">
     <p>A small home office has a problem a large one does not: the workspace has to end. When the desk is in the bedroom or the corner of the living room, the difference between a workspace and clutter is whether it has an edge.</p>
@@ -371,10 +372,12 @@ a{color:inherit}
   </div>
 </section>
 
+<!-- ============================== STEPS ============================== -->
 <section class="steps">
   <div class="wrap read">
 
-    <article class="step">
+    <!-- ---------- STEP 1 ---------- -->
+     <article class="step">
       <div class="step-head">
         <div class="step-num">01</div>
         <h2>Build upward, because you cannot build outward</h2>
@@ -399,6 +402,7 @@ a{color:inherit}
       </div>
     </article>
 
+    <!-- ---------- STEP 2 ---------- -->
     <article class="step">
       <div class="step-head">
         <div class="step-num">02</div>
@@ -424,6 +428,7 @@ a{color:inherit}
       </div>
     </article>
 
+    <!-- ---------- STEP 3 ---------- -->
     <article class="step">
       <div class="step-head">
         <div class="step-num">03</div>
@@ -449,6 +454,7 @@ a{color:inherit}
       </div>
     </article>
 
+    <!-- ---------- STEP 4 ---------- -->
     <article class="step">
       <div class="step-head">
         <div class="step-num">04</div>
@@ -474,6 +480,7 @@ a{color:inherit}
       </div>
     </article>
 
+    <!-- ---------- STEP 5 ---------- -->
     <article class="step">
       <div class="step-head">
         <div class="step-num">05</div>
