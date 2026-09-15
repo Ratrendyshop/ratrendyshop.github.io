@@ -2,7 +2,7 @@
 
 A clean, modern affiliate site for trending **home office productivity gadgets**, curated by Ratrendyshop and promoted on Pinterest & Instagram ([@Ratrendyshop](https://pinterest.com/Ratrendyshop)).
 
-🔗 **Live site:** https://ratrendyshop.github.io
+🔗 **Live site:** https://ratrendyshop.com
 
 ---
 
