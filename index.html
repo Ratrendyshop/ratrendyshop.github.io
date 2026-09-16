@@ -438,8 +438,18 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.04;letter
   max-width:none!important;margin-bottom:12px!important;font-size:.92rem!important;
 }
 
+/* hide Brevo system panels until JS shows them */
+.signup-embed .sib-form-message-panel{display:none}
+.signup-embed .sib-form-message-panel.sib-form-message-panel--active{display:block}
+/* hide the anti-spam honeypot field */
+.signup-embed .input--hidden,
+.signup-embed input[name="email_address_check"]{display:none!important}
+.signup-embed .sib-form-message-panel{margin-bottom:12px}
+
 </style>
 
+<!-- ============================== EMAIL_FORM ============================== -->
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 <script>
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
   window.LOCALE = 'en';
@@ -461,6 +471,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.04;letter
 </script>
 
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
 
 
 </head>
@@ -1228,8 +1239,6 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.04;letter
             </div>
           </div>
         </div>
-
-        <p class="signup-note">Enter your email and we'll send the guide. No spam - unsubscribe anytime.</p>
       </div>
 
       <div class="guide-visual" aria-hidden="true">
