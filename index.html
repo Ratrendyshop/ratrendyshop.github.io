@@ -420,7 +420,19 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.04;letter
 }
 .signup-embed input#EMAIL:focus{outline:none;border-color:var(--ink)!important}
 .signup-embed input#EMAIL::placeholder{color:#a79f96!important;font-family:var(--font-body)!important}
-
+/* kill Brevo's wrapper box around the input */
+.signup-embed .entry__field{
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+.signup-embed .form__entry,
+.signup-embed .form__label-row{
+  border:0!important;
+  background:transparent!important;
+}
 .signup-embed .sib-optin label{display:flex;gap:9px;align-items:flex-start;cursor:pointer}
 .signup-embed .optin-text{font-family:var(--font-body);font-size:.82rem;line-height:1.45;color:#6b5f3a}
 .signup-embed .sib-optin input[type=checkbox]{accent-color:var(--coral);margin-top:2px;flex:none}
