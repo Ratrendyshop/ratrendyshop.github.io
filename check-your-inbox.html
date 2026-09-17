@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Almost there - check your inbox | Ratrendyshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --porcelain:#FBF9F4;--white:#FFFFFF;--ink:#221F1D;--ink-soft:#6A615A;
+  --butter:#FCEEBE;--butter-deep:#F4DA8C;--coral:#F4502E;--coral-deep:#D33E1E;
+  --leaf:#4F7A52;--line:#EBE5D9;
+  --font-display:'Bricolage Grotesque',system-ui,sans-serif;--font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--font-body);background:var(--porcelain);color:var(--ink);
+  line-height:1.6;-webkit-font-smoothing:antialiased;
+  min-height:100vh;display:flex;flex-direction:column;
+}
+a{color:inherit;text-decoration:none}
+
+/* header */
+.top{background:var(--ink);padding:16px 0}
+.wrap{max-width:680px;margin:0 auto;padding:0 22px;width:100%}
+.brand{font-family:var(--font-display);font-weight:800;font-size:1.3rem;color:var(--porcelain);letter-spacing:-.02em}
+.brand span{color:var(--coral)}
+
+/* card */
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:44px 0}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:26px;
+  padding:48px 44px;text-align:center;width:100%;
+  box-shadow:0 14px 32px rgba(34,31,29,.10), 0 30px 70px rgba(34,31,29,.07);
+}
+.icon{font-size:52px;line-height:1;margin-bottom:16px}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(1.8rem,4.6vw,2.4rem);
+   line-height:1.1;letter-spacing:-.03em;margin-bottom:14px}
+.lead{font-size:1.05rem;color:var(--ink-soft);max-width:44ch;margin:0 auto 28px}
+.lead b{color:var(--ink)}
+
+/* steps */
+.steps{text-align:left;max-width:400px;margin:0 auto 26px;display:grid;gap:12px}
+.step{display:flex;gap:13px;align-items:flex-start;font-size:.97rem;color:var(--ink)}
+.num{
+  width:26px;height:26px;border-radius:50%;background:var(--coral);color:#fff;flex:none;
+  display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:.85rem;
+}
+
+/* note */
+.note{
+  background:var(--butter);border:1px solid var(--butter-deep);border-radius:16px;
+  padding:16px 20px;font-size:.92rem;line-height:1.55;color:#6b5f3a;margin-bottom:26px;
+}
+.note b{color:var(--ink)}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  font-family:var(--font-display);font-weight:700;font-size:.97rem;
+  border-radius:999px;padding:14px 30px;transition:transform .18s ease,background .18s ease;
+}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 20px rgba(244,80,46,.28)}
+.btn-primary:hover{background:var(--coral-deep);transform:translateY(-2px)}
+.btn-ghost{background:var(--white);color:var(--ink);border:1.5px solid var(--line);margin-top:10px}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+
+/* footer */
+.foot{padding:24px 0 30px;text-align:center;font-size:.82rem;color:#928a80;line-height:1.7}
+.foot b{color:var(--ink-soft)}
+
+@media(max-width:520px){
+  .card{padding:36px 24px;border-radius:20px}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://ratrendyshop.com">Ratrendy<span>shop</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="card">
+      <div class="icon">&#128233;</div>
+      <h1>Almost there - check your inbox</h1>
+      <p class="lead">We just sent you a confirmation email. Click the button inside it and <b>The Home Office Gadget Guide</b> is yours.</p>
+
+      <div class="steps">
+        <div class="step"><span class="num">1</span><div>Open the email from <b>Ratrendyshop</b></div></div>
+        <div class="step"><span class="num">2</span><div>Tap <b>&ldquo;Confirm &amp; get my guide&rdquo;</b></div></div>
+        <div class="step"><span class="num">3</span><div>Your guide arrives straight away</div></div>
+      </div>
+
+      <div class="note">
+        <b>Don't see it?</b> Give it a minute, then check your <b>spam</b> or <b>promotions</b> folder - and drag it to your inbox so future picks land in the right place.
+      </div>
+
+      <a class="btn btn-primary" href="https://ratrendyshop.com/#trending">Browse gadgets while you wait &#8594;</a><br>
+      <a class="btn btn-ghost" href="https://ratrendyshop.com">&#8592; Back to Ratrendyshop</a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Follow along on Pinterest &amp; Instagram <b>@Ratrendyshop</b></p>
+    <p>As an AliExpress affiliate, we may earn a small commission at no extra cost to you.</p>
+  </div>
+</footer>
+
+</body>
+</html>
