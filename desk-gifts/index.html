@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--
+  ================================================================
+  RATRENDYSHOP GUIDE  -  desk-gifts
+  File location in repo:  /desk-gifts/index.html
+  Live URL: https://ratrendyshop.com/desk-gifts/
+  ================================================================
+  Cloned from /small-home-office-setup/index.html.
+  The CSS block is byte-identical to the other guides - do not edit it.
+  ================================================================
+  PRODUCT PHOTOS
+  Every .pin block already holds a real photo from /images/.
+  Pin images are 2:3 (1000x1500). The .pin box is already 2:3.
+  ================================================================
+-->
+
+<title>Desk Gifts Under $30: 8 Picks That Do Not End Up in a Drawer | Ratrendyshop</title>
+<meta name="description" content="Desk gifts for coworkers, for men, and for someone leaving the job - eight picks under $30 that need no measuring and that nobody already owns twice." />
+<link rel="canonical" href="https://ratrendyshop.com/desk-gifts/" />
+
+<!-- Open Graph / Pinterest rich preview -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ratrendyshop" />
+<meta property="og:title" content="Desk Gifts Under $30: 8 Picks That Do Not End Up in a Drawer" />
+<meta property="og:description" content="Desk gifts for coworkers, for men, and for someone leaving the job - eight picks under $30 that need no measuring and that nobody already owns twice." />
+<meta property="og:url" content="https://ratrendyshop.com/desk-gifts/" />
+<meta property="og:image" content="https://ratrendyshop.com/images/smartmug.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Desk Gifts Under $30: 8 Picks That Do Not End Up in a Drawer" />
+<meta name="twitter:description" content="Desk gifts for coworkers, for men, and for someone leaving the job - eight picks under $30 that need no measuring and that nobody already owns twice." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<style>
+  
+/* ============================== TOKENS (mirrors index.html) ============================== */
+:root{
+  --porcelain:#FBF9F4;
+  --white:#FFFFFF;
+  --ink:#221F1D;
+  --ink-soft:#6A615A;
+  --butter:#FCEEBE;
+  --butter-deep:#F4DA8C;
+  --coral:#F4502E;
+  --coral-deep:#D33E1E;
+  --leaf:#4F7A52;
+  --line:#EBE5D9;
+
+  --shadow-sm:0 1px 2px rgba(34,31,29,.05), 0 4px 12px rgba(34,31,29,.05);
+  --shadow-md:0 6px 18px rgba(34,31,29,.08), 0 18px 40px rgba(34,31,29,.07);
+  --shadow-lg:0 14px 32px rgba(34,31,29,.12), 0 30px 70px rgba(34,31,29,.10);
+
+  --radius-s:12px;
+  --radius:18px;
+  --radius-l:26px;
+  --maxw:1180px;
+  --readw:720px;
+
+  --font-display:"Bricolage Grotesque", system-ui, sans-serif;
+  --font-body:"Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* ============================== RESET ============================== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--porcelain);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.read{max-width:var(--readw);margin-inline:auto}
+
+.skip{
+  position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;
+  padding:12px 18px;border-radius:0 0 var(--radius-s) 0;z-index:99;
+}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:4px}
+
+/* ============================== HEADER ============================== */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,249,244,.88);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;gap:20px;height:72px}
+.brand{
+  font-family:var(--font-display);font-weight:800;font-size:20px;
+  text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-.02em;
+}
+.brand span:last-child{color:var(--coral)}
+.site-logo{
+  width:40px;height:40px;object-fit:cover;aspect-ratio:1/1;border-radius:50%;display:block;flex:0 0 40px;
+}
+.brand-mark{
+  width:32px;height:32px;border-radius:10px;background:var(--ink);color:var(--butter);
+  display:grid;place-items:center;font-size:16px;
+}
+.nav-links{display:flex;gap:26px;list-style:none;margin-inline-start:auto}
+.nav-links a{
+  text-decoration:none;font-size:15px;font-weight:500;color:var(--ink-soft);
+  padding:6px 2px;border-bottom:2px solid transparent;transition:.18s;
+}
+.nav-links a:hover{color:var(--ink);border-bottom-color:var(--coral)}
+.nav-cta{
+  margin-inline-start:20px;text-decoration:none;font-weight:600;font-size:14px;
+  background:var(--ink);color:var(--porcelain);padding:11px 20px;border-radius:999px;
+  white-space:nowrap;transition:.18s;
+}
+.nav-cta:hover{background:var(--coral)}
+@media(max-width:820px){
+  .nav-links{display:none}
+  .nav{height:64px}
+}
+
+/* ============================== BREADCRUMB ============================== */
+.crumb{
+  font-size:13px;color:var(--ink-soft);padding:22px 0 0;
+  display:flex;gap:8px;flex-wrap:wrap;
+}
+.crumb a{text-decoration:none;border-bottom:1px solid var(--line)}
+.crumb a:hover{color:var(--coral);border-bottom-color:var(--coral)}
+
+/* ============================== HERO ============================== */
+.hero{padding:34px 0 8px}
+.eyebrow{
+  display:inline-block;font-family:var(--font-display);font-weight:700;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-deep);
+  background:var(--butter);padding:7px 14px;border-radius:999px;
+}
+.hero h1{
+  font-family:var(--font-display);font-weight:800;letter-spacing:-.03em;
+  font-size:clamp(34px,6vw,58px);line-height:1.04;margin:20px 0 0;
+}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.standfirst{
+  font-size:clamp(17px,2.2vw,20px);color:var(--ink-soft);margin-top:20px;max-width:60ch;
+}
+.meta-row{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  margin-top:24px;font-size:13px;color:var(--ink-soft);
+}
+.chip{
+  background:var(--white);border:1px solid var(--line);border-radius:999px;
+  padding:6px 14px;font-weight:600;color:var(--ink);
+}
+
+/* --- SIGNATURE: the tangle that resolves --- */
+.tangle{margin:34px 0 8px;overflow:hidden}
+.tangle svg{width:100%;height:auto}
+.tangle path{
+  fill:none;stroke:var(--coral);stroke-width:3.5;stroke-linecap:round;
+  stroke-dasharray:1400;stroke-dashoffset:1400;
+  animation:draw 2.4s cubic-bezier(.2,.7,.2,1) .25s forwards;
+}
+.tangle .ghost{stroke:var(--butter-deep);stroke-width:3.5;animation-delay:0s;opacity:.85}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){
+  .tangle path{animation:none;stroke-dashoffset:0}
+}
+
+/* ============================== DISCLOSURE ============================== */
+.disclosure{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:14px 18px;font-size:13.5px;color:var(--ink-soft);margin:30px 0 0;
+}
+.disclosure strong{color:var(--ink)}
+
+/* ============================== INTRO ============================== */
+.intro{padding:36px 0 6px;font-size:17.5px}
+.intro p + p{margin-top:16px}
+
+/* ============================== STEPS ============================== */
+.steps{padding:24px 0 10px;position:relative}
+.step{
+  position:relative;
+  padding:44px 0;
+  border-top:1px solid var(--line);
+}
+.step:first-child{border-top:none}
+.step-head{display:flex;gap:16px;align-items:baseline}
+.step-num{
+  font-family:var(--font-display);font-weight:800;font-size:15px;
+  color:var(--coral);background:var(--butter);border-radius:999px;
+  width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;
+  align-self:flex-start;margin-top:4px;
+}
+.step h2{
+  font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(24px,3.4vw,32px);line-height:1.15;
+}
+.step-body{margin-top:18px}
+.step-body p + p{margin-top:14px}
+.step-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:34px;align-items:start;
+  margin-top:22px;
+}
+@media(max-width:860px){
+  .step-grid{grid-template-columns:1fr;gap:26px}
+}
+
+.why{
+  background:var(--white);border:1px solid var(--line);border-left:4px solid var(--leaf);
+  border-radius:var(--radius-s);padding:16px 18px;margin-top:18px;font-size:15.5px;
+}
+.why b{font-family:var(--font-display);letter-spacing:-.01em}
+
+/* --- pin card (2:3, ready for a real photo) --- */
+.pin{
+  border-radius:var(--radius);overflow:hidden;background:var(--white);
+  border:1px solid var(--line);box-shadow:var(--shadow-md);
+}
+.pin-art{width:100%;aspect-ratio:2/3;object-fit:cover;background:var(--butter)}
+.pin-foot{padding:14px 16px 16px}
+.pin-name{font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.25}
+.pin-note{font-size:13px;color:var(--ink-soft);margin-top:5px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;margin-top:14px;text-decoration:none;font-weight:700;font-size:14.5px;
+  background:var(--coral);color:#fff;padding:13px 18px;border-radius:999px;
+  transition:.18s;box-shadow:var(--shadow-sm);
+}
+.btn:hover{background:var(--coral-deep);transform:translateY(-1px)}
+.btn svg{width:15px;height:15px}
+
+/* ============================== CLOSING ============================== */
+.order{
+  background:var(--ink);color:var(--porcelain);border-radius:var(--radius-l);
+  padding:clamp(28px,5vw,44px);margin:44px 0;
+}
+.order h2{
+  font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(24px,3.6vw,32px);line-height:1.15;
+}
+.order ol{margin:20px 0 0;padding-inline-start:22px}
+.order li{margin-top:10px;color:#E6DFD5}
+.order li b{color:var(--butter)}
+
+.more{padding:10px 0 60px}
+.more h2{
+  font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(22px,3.2vw,28px);
+}
+.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.more-card{
+  display:block;text-decoration:none;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);padding:20px;transition:.18s;
+}
+.more-card:hover{border-color:var(--coral);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.more-card span{
+  font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--coral-deep);
+}
+.more-card p{font-family:var(--font-display);font-weight:700;font-size:17px;margin-top:8px;line-height:1.25}
+
+/* ============================== FOOTER ============================== */
+.site-footer{border-top:1px solid var(--line);padding:34px 0;font-size:14px;color:var(--ink-soft)}
+.footer-row{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.site-footer a{text-decoration:none;border-bottom:1px solid var(--line)}
+.site-footer a:hover{color:var(--coral)}
+</style>
+</head>
+<a class="skip" href="#guide-start">Skip to the guide</a>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a class="brand" href="/" aria-label="Ratrendyshop home">
+        <img class="site-logo" src="/images/LogoT.png" alt="Ratrendyshop logo" >
+        Ratrendy<span>Shop</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#trending">Trending</a></li>
+        <li><a href="/#picks">Editor's Picks</a></li>
+        <li><a href="/#guide">Free Guide</a></li>
+        <li><a href="/#follow">Follow</a></li>
+      </ul>
+      <a class="nav-cta" href="/#trending">Shop Gadgets</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <nav class="crumb read" aria-label="Breadcrumb">
+    <a href="/">Ratrendyshop</a> <span aria-hidden="true">&rarr;</span> <a href="https://ratrendyshop.com/#guides">Guides</a><span aria-hidden="true">&rarr;</span><span>Desk Gifts</span>
+  </nav>
+</div>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="wrap read">
+    <span class="eyebrow">Gift guide</span>
+    <h1>Desk gifts that <em>do not end up in a drawer</em></h1>
+    <p class="standfirst">The hard part of buying a desk gift is that you are buying for a desk you have not seen. Everything below either needs no measuring, or says plainly what it needs.</p>
+    <div class="meta-row">
+      <span class="chip">8 picks</span>
+      <span class="chip">Under $30</span>
+      <span class="chip">Nothing to measure</span>
+    </div>
+  </div>
+
+    <!-- SIGNATURE: a cable that starts knotted and ends straight -->
+  <div class="wrap read tangle" aria-hidden="true">
+    <svg viewBox="0 0 720 120" role="presentation">
+      <path class="ghost" d="M6 84 C 60 84, 62 22, 108 22 S 156 96, 198 78 S 236 18, 282 34 S 318 96, 366 82 C 420 66, 470 60, 714 60"/>
+      <path d="M6 60 C 54 60, 58 16, 104 16 S 150 104, 194 84 S 232 22, 278 40 S 316 92, 364 78 C 418 62, 468 60, 714 60"/>
+    </svg>
+  </div>
+
+  <div class="wrap read">
+    <p class="disclosure"><strong>Heads up:</strong> the product links on this page are affiliate links. If you buy through one, Ratrendyshop earns a small commission - at no extra cost to you. We only list things we would put on our own desk.</p>
+  </div>
+</section>
+
+<!-- ============================== INTRO ============================== -->
+<section class="intro" id="guide-start">
+  <div class="wrap read">
+    <p>Desk gifts fail in two ways, and both are predictable. Either the person already owns one, or it does not fit the desk you never measured. A mat is the wrong width. A riser needs a monitor they do not have. A mug that was meant to be used sits in a cupboard.</p>
+    <p>So the list below is ordered by how much you know about the recipient. The first four work for a desk you have never seen. The next three assume you have. The last one is for someone who is leaving, which is its own problem - it has to still make sense at a desk neither of you has met.</p>
+  </div>
+</section>
+
+<!-- ============================== PICKS ============================== -->
+<section class="steps">
+  <div class="wrap read">
+
+    <!-- ---------- PICK 01 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">01</div>
+        <h2>The safest gift on this list</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>Almost everyone at a desk is drinking something, almost nobody has solved the fact that it goes cold, and almost nobody owns two. That combination is rare, and it is the whole reason this one sits first.</p>
+          <p>It is a warming plate, not a kettle - it holds a full mug at about 55&deg;C rather than reheating it, which is the part people do not expect and then use every day.</p>
+          <div class="why"><b>Why it works as a gift:</b> no sizing, no setup, no taste involved. It is useful on the first morning and it does not ask them to change anything.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/smartmug.jpg" alt="A smart mug warmer holding a full mug of coffee on a desk" loading="lazy" data-pin-description="A smart mug warmer that holds coffee at 55&deg;C through a working block &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">WarmSip Smart Mug Warmer</p>
+            <p class="pin-note">About $7. The one nobody already owns.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c3nanXUb" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 02 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">02</div>
+        <h2>For someone who types all day and has never fixed it</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>Wrist ache is the complaint people mention and then do nothing about, because the fix costs almost nothing and therefore never makes it onto a list. That is exactly what makes it a good gift.</p>
+          <p>It is a matched pair rather than a single pad, so the mouse hand is covered too - which is the half most people forget when they buy it for themselves.</p>
+          <div class="why"><b>Why it works as a gift:</b> it fits any keyboard and any desk, so you do not need to have seen either.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/wristrest1.jpg" alt="A memory foam wrist rest set in front of a keyboard and a mouse" loading="lazy" data-pin-description="A matched memory foam wrist rest set for keyboard and mouse &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">Memory Foam Wrist Rest Set</p>
+            <p class="pin-note">About $9. Keyboard and mouse, not just one.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c2vGXm7f" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 03 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">03</div>
+        <h2>The one that works on a desk you have never seen</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>A cordless lamp is the only light you can give someone without knowing where their sockets are, how their desk is arranged, or whether they are allowed to drill anything.</p>
+          <p>It charges over USB and it is touch-dimmed, so it also works on a nightstand, a shelf or a windowsill if their desk is already lit.</p>
+          <div class="why"><b>Why it works as a gift:</b> it is the rare desk object that is decorative enough to read as a present and useful enough to stay out.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/desklamp1.jpg" alt="A cordless LED touch lamp glowing warm on a desk" loading="lazy" data-pin-description="A rechargeable cordless LED touch lamp, warm and dimmable &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">LED Cordless Touch Lamp</p>
+            <p class="pin-note">About $8. No socket needed, so no guessing.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c4bACdlV" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 04 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">04</div>
+        <h2>When you are buying ten of the same thing</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>Secret santa, a team, a whole floor - at some point the question stops being what to buy and becomes what survives being bought twenty times. At a couple of dollars each this is the one that does.</p>
+          <p>They are magnetic rather than adhesive, which means the cable end clicks back into place instead of being threaded through a loop, and they work on a desk edge, a wall, a car or a kitchen counter.</p>
+          <div class="why"><b>Why it works in bulk:</b> at this price nobody feels awkward receiving it, and unlike most cheap desk gifts it gets used the same day rather than put in a drawer.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/cable-clipsblack.jpg" alt="Magnetic cable clips holding three charging cables at a desk edge" loading="lazy" data-pin-description="Magnetic cable clips that hold the cable end at the desk edge &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">Magnetic Cable Organiser Clips</p>
+            <p class="pin-note">About $2.40. The one that scales to twenty.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c3de0wDZ" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 05 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">05</div>
+        <h2>For the desk with pens in three different places</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>This is the first pick on the list that assumes you have actually seen their desk, because it only lands if there is something to contain. If there is, it lands hard - loose stationery is the clutter people notice in themselves and never fix.</p>
+          <p>It is tiered rather than a single cup, so pens, markers, scissors and sticky notes each have a place you can see into. A drawer hides the problem; this one ends it.</p>
+          <div class="why"><b>Why it works as a gift:</b> it is the kind of object people will not buy for themselves because it feels unnecessary, and then use every day.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/penorganizer1.jpg" alt="A wooden tiered pen and pencil holder on a desk" loading="lazy" data-pin-description="A tiered wooden pen and stationery holder for a desk &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">Wooden Pen &amp; Pencil Holder</p>
+            <p class="pin-note">About $13. Only if there is clutter to hold.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c3mhjuSF" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 06 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">06</div>
+        <h2>If you know they work after dark</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>A monitor light bar is a better gift than a desk lamp for one reason: it takes no surface. It clamps on top of the screen and throws light forward onto the desk, which is the one place a ceiling bulb never reaches.</p>
+          <p>The light is asymmetric, so it lands on the keyboard and the paper rather than bouncing off the display.</p>
+          <div class="why"><b>One condition:</b> they need a monitor. On a laptop-only desk this is the wrong gift and the cordless lamp above is the right one.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/lumabarlight.jpg" alt="A monitor light bar clipped to the top of a screen, lighting the desk below" loading="lazy" data-pin-description="A monitor light bar that lights the desk without washing the screen &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">LumaBar Monitor Light Bar</p>
+            <p class="pin-note">About $18. Needs a monitor to clamp to.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c38hrHOn" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 07 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">07</div>
+        <h2>If you know the house is loud</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>For someone sharing a flat, working near a kitchen, or on calls in a house with other people in it, the interruption is not one big noise - it is a dozen small ones that each pull their head up.</p>
+          <p>A steady sound floor covers those without making the room silent, which is the part people do not expect until they have tried it.</p>
+          <div class="why"><b>Why it works as a gift:</b> it solves a problem they have complained about out loud, which makes it the rare desk gift that reads as having been listened to.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/white_noise_sound_machin.jpg" alt="A small white noise machine on a desk beside a laptop" loading="lazy" data-pin-description="A compact white noise machine with calming soundscapes for a home desk &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">FocusPod White Noise Machine</p>
+            <p class="pin-note">About $16. For a house with other people in it.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c4rBPZqn" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- PICK 08 ---------- -->
+    <article class="step">
+      <div class="step-head">
+        <div class="step-num">08</div>
+        <h2>For someone leaving, who will set a desk up again</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-body">
+          <p>A leaving gift has a requirement the others do not: it has to still make sense at a desk you will never see. That rules out anything sized, mounted or matched to the office they are walking out of.</p>
+          <p>A vertical mouse travels, and it is the upgrade people keep meaning to try and never do. It holds the hand in a handshake grip rather than flat, which is the whole point.</p>
+          <div class="why"><b>Why it works for a leaving gift:</b> it is personal without being sentimental, and they will think of where it came from every time they plug it in.</div>
+        </div>
+        <div class="pin">
+          <img class="pin-art" src="/images/verticalmouse1.jpg" alt="A vertical ergonomic mouse held in a natural handshake grip beside a keyboard" loading="lazy" data-pin-description="A vertical ergonomic mouse that holds the hand in a handshake grip &mdash; Ratrendyshop.">
+          <div class="pin-foot">
+            <p class="pin-name">UGREEN Vertical Mouse</p>
+            <p class="pin-note">About $28. Goes with them to the next desk.</p>
+            <a class="btn" href="https://s.click.aliexpress.com/e/_c44kcMgf" target="_blank" rel="nofollow sponsored noopener">
+              Check current price
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="wrap read">
+  <div class="order">
+    <h2>What not to buy for someone else's desk</h2>
+    <ol>
+      <li><b>A desk mat.</b> It only works at the right width, and getting that wrong means it lives rolled up behind a cupboard. Buy one for your own desk, not theirs.</li>
+      <li><b>A mechanical keyboard.</b> Anyone who wants one already has opinions about switches. Anyone who does not will keep the keyboard they have.</li>
+      <li><b>Anything with a quote on it.</b> It has to survive their taste, their manager's taste, and the next office move. Very little does.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="more">
+  <div class="wrap read">
+    <h2>Keep going</h2>
+    <div class="more-grid">
+      <a class="more-card" href="/minimalist-desk-essentials/">
+        <span>10 objects</span>
+        <p>Minimalist desk essentials</p>
+      </a>
+      <a class="more-card" href="/focus-desk-gadgets/">
+        <span>7 gadgets</span>
+        <p>Focus gadgets for deep work</p>
+      </a>
+      <a class="more-card" href="/desk-cable-management/">
+        <span>7 fixes</span>
+        <p>Desk cable management</p>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap read">
+    <div class="footer-row">
+      <p>&copy; <span id="year">2026</span> Ratrendyshop</p>
+      <p><a href="/">Back to all gadgets</a></p>
+    </div>
+    <p style="margin-top:14px">As an AliExpress affiliate, Ratrendyshop earns from qualifying purchases. Prices and availability change &mdash; always check the current price before buying.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Desk Gifts Under $30: 8 Picks That Do Not End Up in a Drawer",
+  "description":"Desk gifts for coworkers, for men, and for someone leaving the job - eight picks under $30 that need no measuring and that nobody already owns twice.",
+  "author":{"@type":"Organization","name":"Ratrendyshop"},
+  "publisher":{"@type":"Organization","name":"Ratrendyshop"},
+  "mainEntityOfPage":"https://ratrendyshop.com/desk-gifts/"
+}
+</script>
+</body>
+</html>
