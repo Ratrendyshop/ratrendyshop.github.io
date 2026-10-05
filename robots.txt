@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# The lead magnet is gated behind an email form.
+# robots.txt is the only lever GitHub Pages gives us for a PDF file -
+# it keeps the file out of search results, it does not block access.
+Disallow: /The-Home-Office-Gadget-Guide.pdf
